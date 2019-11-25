@@ -1,0 +1,22 @@
+.navbar{
+    @include default(100%, 50px);
+    flex-flow: row;
+    background: $base;
+    position:fixed;
+    z-index: 2;
+    color: $compliment-light;
+    align-items: center;
+    .links{
+        width: 100%;
+        display:inline-flex;
+        justify-content: space-evenly;
+        flex-flow: row;
+        .linkItems{
+            color: $compliment-light;
+
+            text-decoration: none;
+            
+        }
+    }
+
+}

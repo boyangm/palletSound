@@ -1,0 +1,20 @@
+.mediaCont{
+    .videoscreen{
+        margin-top: 50px;
+    }
+    .videoCont{
+        position: relative;
+        overflow: scroll;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+    }
+    .videoBlock{
+        width: 50%;
+        position: relative;
+        .imageView{
+            width: 100%;
+           
+        }
+    }
+}

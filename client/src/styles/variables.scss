@@ -1,0 +1,33 @@
+$base:#3271a8;
+$compliment : complement($base);
+$compliment-light: lighten($compliment, 40%);
+
+//fonts
+$mainFont: 'Calistoga', cursive;
+
+@mixin default($width, $height){
+    position: relative;
+    width: $width;
+    min-height: $height;
+    font-family: $mainFont;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+@mixin button($primary,$secondary){
+    background: $primary;
+    margin: 10px 10px 0;
+    min-width: 100px;
+    color: lighten($secondary,30%);
+    font-family: $mainFont;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    &:hover{
+        color: white;
+        cursor: pointer;
+    }
+    @media only screen and (max-width: 600px) {
+        font-size: 1rem;
+
+    }
+}
