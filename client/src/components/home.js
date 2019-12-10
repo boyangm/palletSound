@@ -1,4 +1,6 @@
 import React from 'react'
+import {text, microphones , preamps, outboard, snakes, digital , amps, instruments} from '../components/text'
+import Equipment from './equipment'
 
 
 const Home = (props) => {
@@ -10,7 +12,14 @@ const Home = (props) => {
                     <h1>PALLET SOUND</h1>
                     <h3>TAKE YOUR MUSIC FURTHER</h3>
                 </div>
-                    <p>Pallet Sound is a recording studio operated by Michael Mac and Seth Engel, located in the Bridgeport neighborhood of Chicago. Founded in 2015 and housed in a former paint warehouse turned sustainable manufacturing center, Pallet Sound offers an inviting and creative environment where artists can bring their ideas to life. Our facilities include high end audio recording equipment, a wide variety of musical instruments and amplifiers, and a recording configuration that’s adaptable to your needs.</p>
+                    <p>{text}</p>
+                    <Equipment {...props} data= {microphones} title={`Microphones`}></Equipment>
+                    <Equipment {...props} data = {preamps} title={`Pre Amplifiers`}></Equipment>
+                    <Equipment {...props} data = {outboard} title={`Outboard`}></Equipment>
+                    <Equipment {...props} data = {snakes} title={`Snakes`}></Equipment>
+                    <Equipment {...props} data = {digital} title={`Digital Plugins`}></Equipment>
+                    <Equipment {...props} data = {amps} title={`Amplifiers & Cabinets:(some only available upon request)`}></Equipment>
+                    <Equipment {...props} data = {instruments} title={`Instruments`}></Equipment>
             </div>
 
         </div>

@@ -1,0 +1,19 @@
+.equipCont{
+    position: relative;
+    width: 100%;
+    .subHeader{
+        color: $compliment-light;
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+            margin: 0 auto;
+        .listItems{
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}

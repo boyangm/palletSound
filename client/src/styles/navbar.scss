@@ -6,6 +6,13 @@
     z-index: 2;
     color: $compliment-light;
     align-items: center;
+    .title{
+
+        color: $compliment-light;
+        width: 50%;
+        margin-left: 5px;
+        text-decoration: none;
+    }
     .links{
         width: 100%;
         display:inline-flex;
