@@ -2,10 +2,11 @@
     @include default(100%, 100vh);
     background: $base;
     background: url('https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/16143749_644857609019936_6408969759065177332_o.jpg?_nc_cat=105&_nc_ohc=LCkvvhIj92YAQlxGVYjdz0pVd2V2B9rWV-fffOSDT98GEf0sJFCMbol8A&_nc_ht=scontent-atl3-1.xx&oh=59379c75d68e8f89c3406889d97765ad&oe=5E8C6CF8') center no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color:darkgray;
     background-blend-mode: multiply;
     background-attachment: fixed;
-    background-size: cover;
     .heroImage{
         position: relative;
         width: 100%;
