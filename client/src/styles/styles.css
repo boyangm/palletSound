@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homeCont, .mediaCont {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Calistoga", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: #3271a8;
+  background: url("https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/16143749_644857609019936_6408969759065177332_o.jpg?_nc_cat=105&_nc_ohc=LCkvvhIj92YAQlxGVYjdz0pVd2V2B9rWV-fffOSDT98GEf0sJFCMbol8A&_nc_ht=scontent-atl3-1.xx&oh=59379c75d68e8f89c3406889d97765ad&oe=5E8C6CF8") center no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: darkgray;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+.homeCont .heroImage, .mediaCont .heroImage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto 10%;
+  color: #ebd1bb;
+  text-align: center;
+}
+
+.homeCont .heroImage .header, .mediaCont .heroImage .header {
+  margin-top: 59%;
+  text-align: center;
+  letter-spacing: .5rem;
+}
+
+.homeCont .heroImage .header h1, .mediaCont .heroImage .header h1 {
+  font-size: 2rem;
+}
+
+.homeCont .heroImage .media, .mediaCont .heroImage .media {
+  margin: 15% 0;
+  width: 200px;
+}
+
+.homeCont .heroImage p, .mediaCont .heroImage p {
+  margin-top: 10%;
+  line-height: 1.5rem;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  font-family: "Calistoga", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  background: #3271a8;
+  position: fixed;
+  z-index: 2;
+  color: #ebd1bb;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .title {
+  color: #ebd1bb;
+  width: 50%;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.navbar .links {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+}
+
+.navbar .links .linkItems {
+  color: #ebd1bb;
+  text-decoration: none;
+}
+
+.mediaCont .videoscreen {
+  margin-top: 50px;
+}
+
+.mediaCont .videoCont {
+  position: relative;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+}
+
+.mediaCont .videoBlock {
+  width: 50%;
+  position: relative;
+}
+
+.mediaCont .videoBlock .imageView {
+  width: 100%;
+}
+
+.contactCont {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contactCont h3 {
+  color: #3271a8;
+  font-family: "Calistoga", cursive;
+  font-size: 1.5rem;
+}
+
+.contactCont form {
+  margin-top: 100px;
+}
+
+.contactCont label {
+  width: 100%;
+  color: #ebd1bb;
+}
+
+.contactCont input,
+.contactCont textarea {
+  width: 97%;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+.contactCont button {
+  background: #3271a8;
+  margin: 10px 10px 0;
+  min-width: 100px;
+  color: #dfb794;
+  font-family: "Calistoga", cursive;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.contactCont button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactCont button {
+    font-size: 1rem;
+  }
+}
+
+.equipCont {
+  position: relative;
+  width: 100%;
+}
+
+.equipCont .subHeader {
+  color: #ebd1bb;
+  text-align: center;
+}
+
+.equipCont .list {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.equipCont .list .listItems {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

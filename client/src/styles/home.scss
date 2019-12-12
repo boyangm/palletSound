@@ -14,6 +14,10 @@
         margin: 0 auto 10%;
         color: $compliment-light;
         text-align: center;
+        @media screen and (min-width: 768px) { 
+            margin: 0 auto;
+            text-align: start;
+        }
      
         .header{
             margin-top: 59%;
@@ -21,6 +25,17 @@
             letter-spacing: .5rem;
             h1{
                 font-size: 2rem;
+                @media screen and (min-width: 768px) { 
+                    font-size: 6.5rem;
+                }
+            }
+            h3{
+                @media screen and (min-width: 768px) { 
+                    font-size: 2.5rem;
+                }
+            }
+            @media screen and (min-width: 768px) { 
+                margin-top: 10%;
             }
         }
         .media{
@@ -30,6 +45,21 @@
         p{
             margin-top: 10%;
             line-height: 1.5rem;
+            @media screen and (min-width: 768px) { 
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .rowCont{
+            position: relative;
+            display:flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 30%;
+            }
         }
     }
 

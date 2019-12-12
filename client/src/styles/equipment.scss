@@ -1,19 +1,83 @@
 .equipCont{
     position: relative;
     width: 100%;
-    .subHeader{
-        color: $compliment-light;
-        text-align: center;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) { 
+       width:50%;
+        margin: 0;
+        padding: 0;
+
     }
-    .list{
+    .subHeader1{
+        color: $compliment-light;
+        @media screen and (min-width: 768px) { 
+           
+            margin: 0;
+            padding: 0;
+    
+        }
+    }
+       
+    .list1{
         padding: 0;
             margin: 0 auto;
-        .listItems{
+            @media screen and (min-width: 768px) { 
+               
+                margin: 0;
+                padding: 0;
+        
+            }
+        .listItems1{
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            @media screen and (min-width: 768px) { 
+               
+                margin: 0;
+                padding: 0;
+        
+            }
+        }
+    }
+    .subHeader2{
+        color: $compliment-light;
+        text-align: center;
+        @media screen and (min-width: 768px) { 
+            margin: 0;
+            padding: 0;
+    
+        }
+    }
+    .list2{
+        padding: 0;
+            margin: 0 auto;
+            @media screen and (min-width: 768px) { 
+                margin: 0;
+                padding: 0;
+        
+            }
+        .listItems2{
             list-style: none;
             text-align: center;
             padding: 0;
             margin: 0 auto;
-            width: 100%;
+            @media screen and (min-width: 768px) { 
+                margin: 0;
+                padding: 0;
+        
+            }
         }
     }
+
 }
+
+// .special{
+//     @media screen and (min-width: 768px) { 
+//         width: 45%;
+//         margin: 0;
+//         margin-left: 12%; 
+//         padding: 0;
+
+//     }
+
+// }
