@@ -1,0 +1,26 @@
+.mediaCont .videoscreen {
+  margin-top: 50px;
+}
+
+.mediaCont .videoCont {
+  position: relative;
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 0;
+}
+
+.mediaCont .videoBlock {
+  width: 50%;
+  position: relative;
+}
+
+.mediaCont .videoBlock .imageView {
+  width: 100%;
+}
+/*# sourceMappingURL=media.css.map */

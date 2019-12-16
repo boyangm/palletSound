@@ -1,17 +1,17 @@
 import React from 'react';
 
 const Equipment = (props) =>{
-    const {data, title} = props; 
+    const {data, title, type} = props; 
 
     return(
         <div className = "equipCont">
-            <h4 className = 'subHeader'> {title}</h4>
+            <h4 className = {type.a}> {title}</h4>
     
             <>
-            <ul className = 'list'>
+            <ul className = {type.b}>
             {data.map(mic => 
             (
-               <li className = 'listItems'>{mic}</li> 
+               <li className = {type.c}>{mic}</li> 
             )
             )}
 

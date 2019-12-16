@@ -1,12 +1,8 @@
 .homeCont, .mediaCont{
     @include default(100%, 100vh);
-    background: $base;
-    background: url('https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/16143749_644857609019936_6408969759065177332_o.jpg?_nc_cat=105&_nc_ohc=LCkvvhIj92YAQlxGVYjdz0pVd2V2B9rWV-fffOSDT98GEf0sJFCMbol8A&_nc_ht=scontent-atl3-1.xx&oh=59379c75d68e8f89c3406889d97765ad&oe=5E8C6CF8') center no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color:darkgray;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
+    background: darken($base, 15%);
+   
+
     .heroImage{
         position: relative;
         width: 100%;
@@ -14,13 +10,45 @@
         margin: 0 auto 10%;
         color: $compliment-light;
         text-align: center;
+        @media screen and (min-width: 768px) { 
+            margin: 0 auto;
+            text-align: start;
+        }
      
-        .header{
-            margin-top: 59%;
-            text-align: center;
+        .header{    
+            position: absolute;
+            width: 86%;
+            top: 0;
+            left:0;
+             height: 100vh;
             letter-spacing: .5rem;
             h1{
+                position: absolute;
+               
+                
+
                 font-size: 2rem;
+
+                @media screen and (min-width: 768px) { 
+                    top: 0%;
+                    left: 25%;
+                    font-size: 6.5rem;
+                        
+                    z-index:2;
+                    }
+            }
+            h3{
+                position: absolute;
+              
+                @media screen and (min-width: 768px) { 
+                      top: 20%;
+                left: 30%;
+                    font-size: 2.5rem;
+                    z-index:2;
+                }
+            }
+            @media screen and (min-width: 768px) { 
+                margin-top: 10%;
             }
         }
         .media{
@@ -30,6 +58,32 @@
         p{
             margin-top: 10%;
             line-height: 1.5rem;
+            @media screen and (min-width: 768px) { 
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+
+        .rowCont{
+            position: relative;
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            img {
+                width: 40%;
+            }
+        }
+    }
+
+    .slideCont{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        img{
+            height: 100vh;
+            
         }
     }
 

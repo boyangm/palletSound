@@ -1,25 +1,36 @@
-import React from 'react'
-import {text, microphones , preamps, outboard, snakes, digital , amps, instruments} from '../components/text'
+import React, {useEffect, useContext} from 'react'
+import { text, microphones, preamps, outboard, snakes, digital, amps, instruments } from '../components/text'
+import Mics from '../media/microphones.JPG'
+import Amps from '../media/Amps.JPG'
+import Slide from './slide'
 import Equipment from './equipment'
+import Engineers from './engineers'
+import About from './About'
+import Gear from './Gear'
+import {WebState} from './Webstate'
 
 
 const Home = (props) => {
+    const context = useContext(WebState)
+    const {handleScroll} = context
+    useEffect(()=>{
+        document.addEventListener("scroll", () => {
+            handleScroll()
+        })
+        return document.removeEventListener("scroll", () => {
+            handleScroll()
+        })
+    },[])
 
     return (
         <div className="homeCont">
             <div className='heroImage'>
-                <div className='header'>
-                    <h1>PALLET SOUND</h1>
-                    <h3>TAKE YOUR MUSIC FURTHER</h3>
-                </div>
-                    <p>{text}</p>
-                    <Equipment {...props} data= {microphones} title={`Microphones`}></Equipment>
-                    <Equipment {...props} data = {preamps} title={`Pre Amplifiers`}></Equipment>
-                    <Equipment {...props} data = {outboard} title={`Outboard`}></Equipment>
-                    <Equipment {...props} data = {snakes} title={`Snakes`}></Equipment>
-                    <Equipment {...props} data = {digital} title={`Digital Plugins`}></Equipment>
-                    <Equipment {...props} data = {amps} title={`Amplifiers & Cabinets:(some only available upon request)`}></Equipment>
-                    <Equipment {...props} data = {instruments} title={`Instruments`}></Equipment>
+                <Slide></Slide>
+                <Engineers></Engineers>
+                <About {...props} data = {text}></About>
+                <Gear {...props}></Gear>
+            
+
             </div>
 
         </div>
