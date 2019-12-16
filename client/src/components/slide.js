@@ -8,14 +8,14 @@ import AltRoomA from '../media/AltRoomA.JPG'
     return (
         <div className = "slideCont">
             <div className='header'>
-                    <h1 className='header'>PALLET SOUND</h1>
-                    <h3 className='header'>TAKE YOUR MUSIC FURTHER</h3>
+                    <h1 >PALLET SOUND</h1>
+                    <h3 >TAKE YOUR MUSIC FURTHER</h3>
                 </div>
         <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={RoomA}
+            src={AltRoomA}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -40,7 +40,7 @@ import AltRoomA from '../media/AltRoomA.JPG'
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={AltRoomA}
+            src={RoomA}
             alt="Third slide"
           />
       

@@ -1,10 +1,18 @@
-import React ,{useState} from 'react'
-
+import React ,{useState , useContext, useEffect} from 'react'
+import {WebState} from './Webstate'
 const Contact = () =>{
     const name = useInput('');
     const email= useInput('');
     const message= useInput('');
+    const context = useContext(WebState);
+    const {setNavState} = context;
 
+    useEffect(()=>{
+        setNavState('navbar scrolling')
+        
+        
+        return setNavState('navbar');
+    })
     const handleSubmit = (e) =>{
         e.preventDefault()
         const body = {
