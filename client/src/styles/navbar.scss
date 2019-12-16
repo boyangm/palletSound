@@ -1,9 +1,9 @@
 .navbar{
     @include default(100%, 50px);
     flex-flow: row;
-    background: $base;
+    background: transparent;
     position:fixed;
-    z-index: 2;
+    z-index: 100;
     color: $compliment-light;
     align-items: center;
     .title{

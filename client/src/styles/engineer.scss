@@ -1,0 +1,40 @@
+.engineerCont{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background: darken($base, 15%);
+    padding: 50px 0;
+    justify-content: space-between;
+  
+    .seth,.mike{
+        
+        position: relative;
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        
+        h3{
+            font-size: 3rem;
+            margin:0 auto;
+        }
+        p{
+            margin: 0 auto;
+        }
+
+    }
+    img{
+        margin: 0 20px;
+        width: 500px;
+    }
+}
+
+  .subTitle{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        h3{
+            font-size:3.5rem;
+        }
+    }
