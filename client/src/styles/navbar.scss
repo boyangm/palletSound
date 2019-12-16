@@ -6,6 +6,7 @@
     z-index: 100;
     color: $compliment-light;
     align-items: center;
+  
     .title{
 
         color: $compliment-light;
@@ -27,3 +28,8 @@
     }
 
 }
+
+  .scrolling{
+        background: darken($base, 25%);
+        transition: all 0.5s ease-in;
+    }

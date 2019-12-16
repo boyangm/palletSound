@@ -14,7 +14,7 @@ const Media = (props) => {
 
     return (
         <div className="mediaCont">
-            <VideoScreen data= {link}></VideoScreen>
+            <VideoScreen className ='jumbo' data= {link}></VideoScreen>
             <div className = 'videoCont'>
                 {videos.map(video =>(
                 <div className = 'videoBlock'>
