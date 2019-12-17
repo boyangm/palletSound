@@ -6,10 +6,10 @@ import Media from './components/media'
 import Contact from './components/contact'
 import './styles/styles.scss';
 
-function App() {
+function App(props) {
   return (
    <BrowserRouter>
-    <NavBar></NavBar>
+    <NavBar {...props}></NavBar>
      <Switch>
        <Route exact path ="/" render ={(props) => <Redirect {...props} to ='/home'/>}/>
        <Route path = "/home" component = {Home}/>

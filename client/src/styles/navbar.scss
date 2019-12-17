@@ -6,13 +6,22 @@
     z-index: 100;
     color: $compliment-light;
     align-items: center;
+    
+  
   
     .title{
-
+       
         color: $compliment-light;
         width: 50%;
         margin-left: 5px;
         text-decoration: none;
+        &.active{
+            color: white;
+        }
+        &:hover {
+            color:white;
+            transform: all 0.3 ease-in;
+        }
     }
     .links{
         width: 100%;
@@ -20,6 +29,13 @@
         justify-content: space-evenly;
         flex-flow: row;
         .linkItems{
+            &.active{
+                color: white;
+            }
+            &:hover {
+                color:white;
+                transform: all 0.3 ease-in;
+            }
             color: $compliment-light;
 
             text-decoration: none;
@@ -28,8 +44,22 @@
     }
 
 }
+    .svg{
+        fill: $compliment-light;
+        &.active{
+            fill: white;
+        }
+        &:hover {
+            fill:white;
+            transform: all 0.3 ease-in;
+        }
+
+    }
 
   .scrolling{
         background: darken($base, 25%);
         transition: all 0.5s ease-in;
+    }
+    .away {
+        display: none;
     }

@@ -8,11 +8,11 @@ const Contact = () =>{
     const {setNavState} = context;
 
     useEffect(()=>{
-        setNavState('navbar scrolling')
+        setNavState('navbar scrolling');
         
         
         return setNavState('navbar');
-    })
+    },[])
     const handleSubmit = (e) =>{
         e.preventDefault()
         const body = {

@@ -6,7 +6,7 @@ import RoomA from '../media/RoomA.JPG'
 import AltRoomA from '../media/AltRoomA.JPG'
  const Slide = (props) => {
     return (
-        <div className = "slideCont">
+        <div className = "slideCont" id="landing">
             <div className='header'>
                     <h1 >PALLET SOUND</h1>
                     <h3 >TAKE YOUR MUSIC FURTHER</h3>
@@ -21,7 +21,7 @@ import AltRoomA from '../media/AltRoomA.JPG'
           <Carousel.Caption>
             <h3>1048 W 37th Street
             Chicago, Illinois</h3>
-            <p>Scroll Down</p>
+            <a className ="next"href= '#Engineers'>Scroll Down</a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -34,7 +34,7 @@ import AltRoomA from '../media/AltRoomA.JPG'
           <Carousel.Caption>
           <h3>1048 W 37th Street
             Chicago, Illinois</h3>
-            <p>Scroll Down</p>
+            <a className ="next"href= '#Engineers'>Scroll Down</a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -47,7 +47,7 @@ import AltRoomA from '../media/AltRoomA.JPG'
           <Carousel.Caption>
           <h3>1048 W 37th Street
             Chicago, Illinois</h3>
-            <p>Scroll Down</p>
+            <a className ="next"href= '#Engineers'>Scroll Down</a>
             
           </Carousel.Caption>
         </Carousel.Item>

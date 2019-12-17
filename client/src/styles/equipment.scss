@@ -10,9 +10,11 @@
     }
     .subHeader1{
         color: $compliment-light;
+        margin-bottom: 20px;
+
         @media screen and (min-width: 768px) { 
            
-            margin: 0;
+            margin: 0 0 20px 0;
             padding: 0;
     
         }

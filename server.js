@@ -9,10 +9,10 @@ app.use(bodyParser.json())
 app.use(express.json())
 app.use(routes)
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/palletSound";
-mongoose.connect(MONGODB_URI)
-    .then(() => console.log('Mongo Db connected'))
-    .catch(err => console.log(err));
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost:27017/palletSound";
+// mongoose.connect(MONGODB_URI)
+//     .then(() => console.log('Mongo Db connected'))
+//     .catch(err => console.log(err));
 
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'))

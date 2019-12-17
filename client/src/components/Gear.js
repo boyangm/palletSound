@@ -5,7 +5,7 @@ import Amps from '../media/Amps.JPG'
 import Equipment from './equipment'
 const Gear = (props) => {
     return (
-        <div className="rowCont">
+        <div className="rowCont" id="Gear">
         <div className = 'subTitle'>
             <h3>Our Equipment</h3>
         
