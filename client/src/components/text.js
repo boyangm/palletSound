@@ -46,13 +46,13 @@ export const digital =
 export const amps = [
     `BUGERA V22 - COMBO AMP`,
     `*DEAN COSTELLO AMP ‘TEMPLATES’ - HEAD`,
+    `*FENDER HOT ROD DELUXE`
     `*NATIONAL MODEL 99 - HEAD`,
     `NATIONAL 2X12 CABINET (JENSEN SPEAKERS - 16ohms)`,
     `NATIONAL 2X12 CABINET (FENDER SPEAKERS - 16ohms)`,
     `PEAVEY 2X12 CABINET (VINTAGE 30 SPEAKERS - 8ohms)`,
     `PEAVEY KB100 KEYBOARD AMPLIFIER`,
     `UNKNOWN 1x15 CABINET (4ohms)`,
-    `*fender hot rod deluxe`
 ]
 
 export const instruments = [

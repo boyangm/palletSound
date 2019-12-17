@@ -11,11 +11,11 @@ const Gear = (props) => {
         
         </div>
         <Equipment  {...props} data={microphones} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Microphones`}></Equipment>
-        <Equipment {...props} data={preamps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Pre Amplifiers`}></Equipment>
+        <Equipment {...props} data={preamps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Preamplifiers`}></Equipment>
     
     <Equipment {...props} data={outboard} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Outboard`}></Equipment>
     <Equipment {...props} data={snakes} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Snakes`}></Equipment>
-    <Equipment {...props} data={digital} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Digital Plugins`}></Equipment>
+    <Equipment {...props} data={digital} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Digital`}></Equipment>
         
     <Equipment {...props} data={amps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Amplifiers & Cabinets:`}></Equipment>
         <div className = 'subTitle'>
