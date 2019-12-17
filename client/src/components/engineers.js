@@ -10,7 +10,7 @@ import Michael from '../media/michaelprof.png'
         </div>
         <div className = 'seth'>
             <h3>Seth Engel</h3>
-            <p>Recording Engineer/Founder</p>
+            <p>Recording Engineer</p>
 
             <img src = {Seth}/>
         </div>
