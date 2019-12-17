@@ -25,6 +25,7 @@ const Contact = () =>{
     return(
         <div className ='homeCont'>
         <div className = 'contactCont'>
+        <h3 className ='contactTitle'>Contact Us to Book a Session</h3>
             <form>
                     <label id="name">NAME:</label>
                     <input {...name} type='text' name='name'></input>

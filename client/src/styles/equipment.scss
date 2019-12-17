@@ -8,6 +8,11 @@
         padding: 25px 0;
 
     }
+    @media screen and (max-width: 768px) { 
+        width: 50%;
+        margin: 0;
+        padding: 25px 0;
+    }
     .subHeader1{
         color: $compliment-light;
         margin-bottom: 20px;
