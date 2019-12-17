@@ -6,7 +6,6 @@ const Equipment = (props) =>{
     return(
         <div className = "equipCont">
             <h4 className = {type.a}> {title}</h4>
-    
             <>
             <ul className = {type.b}>
             {data.map(mic => 

@@ -17,7 +17,12 @@ const Gear = (props) => {
     <Equipment {...props} data={snakes} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Snakes`}></Equipment>
     <Equipment {...props} data={digital} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Digital Plugins`}></Equipment>
         
-    <Equipment {...props} data={amps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Amplifiers & Cabinets:(some only available upon request)`}></Equipment>
+    <Equipment {...props} data={amps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Amplifiers & Cabinets:`}></Equipment>
+        <div className = 'subTitle'>
+            <p>* Only Available on Request</p>
+        
+        </div>
+        
     </div>
 
     )

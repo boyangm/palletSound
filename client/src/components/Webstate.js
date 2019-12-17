@@ -12,6 +12,8 @@ export const Provider = (props) => {
       }
     }
 
+    
+
     return (
        <WebState.Provider value={{navState,setNavState,handleScroll}} >
        {props.children}

@@ -6,9 +6,11 @@ import PalletShot5 from '../media/musicvid5.png'
 import PalletShot6 from '../media/musicvid6.png'
 import PalletShot7 from '../media/musicvid7.png'
 import PalletShot8 from '../media/musicvid8.png'
+import Oshwa from '../media/Oshwa.png'
+
 export const videos = [
     {pic:PalletShot1 , video:'IbE2f_BMsVo' },
-    {pic:PalletShot2 , video:'PVvmJbO1Md8' },
+    {pic:Oshwa , video:'3sl_YUgLIFQ' },
     {pic:PalletShot3 , video:'1QM0baVk7T0' },
     {pic:PalletShot4 , video:'F72cbPxisDk' },
     {pic:PalletShot5 , video:'Nf-_mO6PM7o' },

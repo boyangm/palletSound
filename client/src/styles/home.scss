@@ -29,7 +29,15 @@
                 z-index:2;
 
                 font-size: 2rem;
-
+                @media (device-height : 568px) 
+                and (device-width : 320px) 
+                and (-webkit-min-device-pixel-ratio: 2)
+            /* and (orientation : todo: you can add orientation or delete this comment)*/ {
+             /*IPhone 5 only CSS here*/
+             top: 40%;
+             left: 7%;
+                 font-size: 1.75rem;
+            }
                 @media screen and (min-width: 768px) and (max-width: 880px) { 
                     top: 20%;
                     left: 15%;
@@ -58,7 +66,15 @@
                 left: 0;
                 font-size: 1.5rem;
                 z-index:2;
-              
+                @media (device-height : 568px) 
+                    and (device-width : 320px) 
+                    and (-webkit-min-device-pixel-ratio: 2)
+                /* and (orientation : todo: you can add orientation or delete this comment)*/ {
+                 /*IPhone 5 only CSS here*/
+                 top: 50%;
+                 left: 3%;
+                     font-size: 1rem;
+                }
                 @media screen and (min-width: 768px) and (max-width: 880px) { 
                       top: 40%;
                 left: 5%;
@@ -96,6 +112,8 @@
 
         .rowCont{
             position: relative;
+            width: 90%;
+            margin: 0 auto;
             display:flex;
             flex-flow: row wrap;
             justify-content: space-around;
