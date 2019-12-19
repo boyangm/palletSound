@@ -4,7 +4,7 @@ module.exports ={
     
             const {name, email, message} =req.body;
             const msg = {
-                to: 'palletsound@gmail.com',
+                to: 'boyangbass@gmail.com',
                 from: email,
                 subject: `${name} would like to book a session`,
                 text: message,
