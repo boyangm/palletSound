@@ -11,16 +11,6 @@ import {WebState} from './Webstate'
 
 
 const Home = (props) => {
-    const context = useContext(WebState)
-    const {handleScroll} = context
-    useEffect(()=>{
-        document.addEventListener("scroll", () => {
-            handleScroll()
-        })
-        return document.removeEventListener("scroll", () => {
-            handleScroll()
-        })
-    },[])
 
     return (
         <div className="homeCont">

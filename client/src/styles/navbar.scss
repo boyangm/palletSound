@@ -1,13 +1,38 @@
+.toggle{
+    display: none;
+    @media only screen and (max-width: 768px){
+        display: block;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index: 1000;
+    }
+}
 .navbar{
     @include default(100%, 50px);
     flex-flow: row;
     background: transparent;
     position:fixed;
+    text-align: center;
     z-index: 100;
     color: $compliment-light;
     align-items: center;
+    transition: transform 0.8s;
+    transform: translateX(-100%);
+
+    &.move{
+        transition: transform 0.8s;
+        transform: translateX(0%); 
+    }
     
-  
+    @media only screen and (max-width:768px){
+        height: 100vh;
+        flex-flow: column;
+        justify-content: center;
+        background:$base;
+
+    }
+    
   
     .title{
        
@@ -22,10 +47,11 @@
             color:white;
             transform: all 0.3 ease-in;
         }
-        @media screen and (max-width: 768px) { 
-            font-size: .8rem;
+        @media only screen and (max-width:768px){
+            width: 100%;
+            margin: 0 auto;
+    
         }
-        
     }
     .links{
         width: 100%;
@@ -34,6 +60,11 @@
         align-items: center;
         justify-content: space-evenly;
         flex-flow: row;
+        @media only screen and (max-width:768px){
+            height: 50vh;
+            flex-flow: column;
+    
+        }
         .linkItems{
             
             &.active{
@@ -46,11 +77,6 @@
             color: $compliment-light;
 
             text-decoration: none;
-            @media screen and (max-width: 768px) { 
-                font-size: .5rem;
-                width: calc(100%/7);
-            }
-            
             
         }
     }
@@ -64,10 +90,6 @@
         &:hover {
             fill:white;
             transform: all 0.3 ease-in;
-        }
-        @media screen and (max-width: 768px) { 
-    
-            width:1rem;
         }
 
     }

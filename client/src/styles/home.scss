@@ -17,13 +17,15 @@
      
         .header{    
             position: absolute;
+            display: flex;
             width: 100%;
+            text-align: center;
             top: 0;
             left:0;
              height: 100vh;
             letter-spacing: .5rem;
             h1{
-                position: absolute;
+                position: relative;
                 top: 40%;
                 left: 10%;
                 z-index:2;
@@ -34,8 +36,8 @@
                 and (-webkit-min-device-pixel-ratio: 2)
             /* and (orientation : todo: you can add orientation or delete this comment)*/ {
              /*IPhone 5 only CSS here*/
-             top: 40%;
-             left: 7%;
+                top: 40%;
+                left: 7%;
                  font-size: 1.75rem;
             }
                 @media screen and (min-width: 768px) and (max-width: 880px) { 
