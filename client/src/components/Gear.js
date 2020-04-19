@@ -1,5 +1,5 @@
 import React from 'react'
-import { text, microphones, preamps, outboard, snakes, digital, amps, instruments } from '../components/text'
+import { text, microphones, preamps, outboard, Instruments, digital, amps, instruments } from '../components/text'
 import Mics from '../media/microphones.JPG'
 import Amps from '../media/Amps.JPG'
 import Equipment from './equipment'
@@ -14,7 +14,7 @@ const Gear = (props) => {
         <Equipment {...props} data={preamps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Preamplifiers`}></Equipment>
     
     <Equipment {...props} data={outboard} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Outboard`}></Equipment>
-    <Equipment {...props} data={snakes} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Snakes`}></Equipment>
+    <Equipment {...props} data={Instruments} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Instruments`}></Equipment>
     <Equipment {...props} data={digital} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Digital`}></Equipment>
         
     <Equipment {...props} data={amps} type={{ a: 'subHeader1', b: 'list1', c : 'listItems1'}} title={`Amplifiers & Cabinets:`}></Equipment>

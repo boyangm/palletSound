@@ -1,6 +1,6 @@
 import React from 'react'
-import Seth from '../media/Sethprofile.jpg'
-import Michael from '../media/michaelprof.png'
+import Seth from '../media/palletsoundportraits-2.jpg'
+import Michael from '../media/palletsoundportraits-1.jpg'
 
  const Engineers = () => {
     return (

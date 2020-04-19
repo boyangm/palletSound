@@ -12,7 +12,6 @@ import AltRoomA from '../media/AltRoomA.JPG'
         <div className = "slideCont" id="landing">
             <div className='header'>
                     <h1 >PALLET SOUND</h1>
-                    <h3 >TAKE YOUR MUSIC FURTHER</h3>
                 </div>
         <Carousel>
         <Carousel.Item>
